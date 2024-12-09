@@ -15,12 +15,12 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    namespace = "org.connect.commons.samples"
+    namespace = "org.connecttag.commons.samples"
 
     compileSdk = libs.versions.app.build.compileSDKVersion.get().toInt()
 
     defaultConfig {
-        applicationId = "org.connect.commons.samples"
+        applicationId = "org.connecttag.commons.samples"
         minSdk = libs.versions.app.build.minimumSDK.get().toInt()
         targetSdk = libs.versions.app.build.targetSDK.get().toInt()
         versionCode = 1
@@ -113,7 +113,6 @@ detekt {
 
 dependencies {
     implementation(projects.commons)
-    implementation(projects.ui.compose)
     implementation(libs.material)
     implementation(libs.androidx.swiperefreshlayout)
 

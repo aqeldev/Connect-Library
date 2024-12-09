@@ -16,4 +16,3 @@ dependencyResolutionManagement {
 rootProject.name = "Connect-Library"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 include(":commons", ":samples")
-include(":ui:compose")

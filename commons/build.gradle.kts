@@ -79,7 +79,6 @@ android {
 
 publishing.publications {
     create<MavenPublication>("release") {
-        description = "A shared library containing common data models for projects."
 
         afterEvaluate {
             from(components["release"])
