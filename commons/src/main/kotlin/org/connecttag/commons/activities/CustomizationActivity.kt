@@ -518,7 +518,7 @@ class CustomizationActivity : BaseSimpleActivity() {
     }
 
     private fun pickPrimaryColor() {
-        if (!packageName.startsWith("org.connect.", true) && baseConfig.appRunCount > 50) {
+        if (!packageName.startsWith("org.connecttag.", true) && baseConfig.appRunCount > 50) {
             finish()
             return
         }

@@ -8,3 +8,4 @@
 /captures
 keystore.jks
 keystore.properties
+/commons/schemas/org.connecttag.commons.databases.ContactsDatabase/3.json

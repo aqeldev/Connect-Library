@@ -218,7 +218,7 @@ class AboutActivity : BaseComposeActivity() {
         val separator = "------------------------------"
         val body = "$appVersion$newline$deviceOS$newline$separator$newline$newline"
 
-        val address = if (packageName.startsWith("org.connect")) {
+        val address = if (packageName.startsWith("org.connecttag")) {
             getString(R.string.my_email)
         } else {
             getString(R.string.my_fake_email)
@@ -309,7 +309,7 @@ class AboutActivity : BaseComposeActivity() {
 
     private fun onPrivacyPolicyClick() {
         val appId = baseConfig.appId.removeSuffix(".debug").removeSuffix(".pro")
-            .removePrefix("org.connect.")
+            .removePrefix("org.connecttag.")
         val url = "https://www.AqelDev.org/policy/$appId"
         launchViewIntent(url)
     }
