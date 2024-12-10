@@ -91,17 +91,17 @@ fun Activity.appLaunched(appId: String) {
 
     if (baseConfig.appRunCount % 40 == 0 && !baseConfig.wasAppRated) {
         if (!resources.getBoolean(R.bool.hide_google_relations)) {
-            RateStarsDialog(this)
+            //RateStarsDialog(this)
         }
     }
 }
 
 fun Activity.showDonateOrUpgradeDialog() {
-    if (getCanAppBeUpgraded()) {
+  /*  if (getCanAppBeUpgraded()) {
         UpgradeToProDialog(this)
     } else if (!isOrWasThankYouInstalled()) {
         DonateDialog(this)
-    }
+    }*/
 }
 
 fun Activity.isAppInstalledOnSDCard(): Boolean = try {
@@ -293,7 +293,7 @@ fun BaseSimpleActivity.showOTGPermissionDialog(path: String) {
 fun Activity.launchPurchaseThankYouIntent() {
     hideKeyboard()
     try {
-        launchViewIntent("market://details?id=org.fossify.thankyou")
+        launchViewIntent("market://details?id=org.connecttag.thankyou")
     } catch (ignored: Exception) {
         launchViewIntent(getString(R.string.thank_you_url))
     }
@@ -507,7 +507,7 @@ fun Activity.openPathIntent(
             setDataAndType(newUri, mimeType)
             addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
 
-            if (applicationId == "org.fossify.gallery" || applicationId == "org.fossify.gallery.debug") {
+            if (applicationId == "org.connecttag.gallery" || applicationId == "org.connecttag.gallery.debug") {
                 putExtra(IS_FROM_GALLERY, true)
             }
 
@@ -550,8 +550,8 @@ fun BaseSimpleActivity.launchCallIntent(recipient: String, handle: PhoneAccountH
             }
 
             if (isDefaultDialer()) {
-                val packageName = if (baseConfig.appId.contains(".debug", true)) "org.fossify.phone.debug" else "org.fossify.phone"
-                val className = "org.fossify.phone.activities.DialerActivity"
+                val packageName = if (baseConfig.appId.contains(".debug", true)) "org.connecttag.phone.debug" else "org.connecttag.phone"
+                val className = "org.connecttag.phone.activities.DialerActivity"
                 setClassName(packageName, className)
             }
 
@@ -617,7 +617,7 @@ fun BaseSimpleActivity.checkWhatsNew(releases: List<Release>, currVersion: Int) 
     releases.filterTo(newReleases) { it.id > baseConfig.lastVersion }
 
     if (newReleases.isNotEmpty()) {
-        WhatsNewDialog(this, newReleases)
+        //WhatsNewDialog(this, newReleases)
     }
 
     baseConfig.lastVersion = currVersion

@@ -23,7 +23,7 @@ import org.connecttag.commons.compose.theme.AppThemeSurface
 import org.connecttag.commons.databinding.DialogPurchaseThankYouBinding
 import org.connecttag.commons.extensions.*
 
-class PurchaseThankYouDialog(val activity: Activity) {
+class PurchaseThankYouDialog2(val activity: Activity) {
     init {
         val view = DialogPurchaseThankYouBinding.inflate(activity.layoutInflater, null, false).apply {
             var text = activity.getString(R.string.purchase_thank_you)
@@ -46,7 +46,7 @@ class PurchaseThankYouDialog(val activity: Activity) {
 }
 
 @Composable
-fun PurchaseThankYouAlertDialog(
+fun PurchaseThankYouAlertDialog2(
     alertDialogState: AlertDialogState,
     modifier: Modifier = Modifier,
 ) {
@@ -98,6 +98,6 @@ fun PurchaseThankYouAlertDialog(
 @MyDevices
 private fun PurchaseThankYouAlertDialogPreview() {
     AppThemeSurface {
-        PurchaseThankYouAlertDialog(alertDialogState = rememberAlertDialogState())
+        PurchaseThankYouAlertDialog2(alertDialogState = rememberAlertDialogState())
     }
 }

@@ -27,7 +27,7 @@ import org.connecttag.commons.extensions.getAlertDialogBuilder
 import org.connecttag.commons.extensions.setupDialogStuff
 import org.connecttag.commons.models.Release
 
-class WhatsNewDialog(val activity: Activity, val releases: List<Release>) {
+class WhatsNewDialog2(val activity: Activity, val releases: List<Release>) {
     init {
         val view = DialogWhatsNewBinding.inflate(LayoutInflater.from(activity), null, false)
         view.whatsNewContent.text = getNewReleases()

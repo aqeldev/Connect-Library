@@ -144,7 +144,7 @@ fun Context.syncGlobalConfig(callback: (() -> Unit)? = null) {
 }
 
 fun Context.withGlobalConfig(callback: (globalConfig: GlobalConfig?) -> Unit) {
-    if (!isThankYouInstalled()) {
+    if (!isThankYouInstalled2()) {
         callback(null)
     } else {
         val cursorLoader = getMyContentProviderCursorLoader()

@@ -13,7 +13,7 @@ import org.connecttag.commons.compose.extensions.*
 import org.connecttag.commons.compose.theme.AppThemeSurface
 import org.connecttag.commons.dialogs.ConfirmationDialog
 import org.connecttag.commons.dialogs.DonateAlertDialog
-import org.connecttag.commons.dialogs.RateStarsAlertDialog
+
 import org.connecttag.commons.extensions.appLaunched
 import org.connecttag.commons.extensions.launchMoreAppsFromUsIntent
 import org.connecttag.commons.extensions.launchViewIntent
@@ -86,7 +86,7 @@ class MainActivity : BaseSimpleActivity() {
     @Composable
     private fun getRateStarsAlertDialogState() = rememberAlertDialogState().apply {
         DialogMember {
-            RateStarsAlertDialog(alertDialogState = this, onRating = ::rateStarsRedirectAndThankYou)
+            //RateStarsAlertDialog(alertDialogState = this, onRating = ::rateStarsRedirectAndThankYou)
         }
     }
 

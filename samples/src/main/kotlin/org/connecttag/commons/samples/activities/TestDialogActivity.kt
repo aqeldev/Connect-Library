@@ -218,7 +218,7 @@ class TestDialogActivity : ComponentActivity() {
     @Composable
     private fun getRateStarsAlertDialogState() = rememberAlertDialogState().apply {
         DialogMember {
-            RateStarsAlertDialog(alertDialogState = this, onRating = ::rateStarsRedirectAndThankYou)
+            //RateStarsAlertDialog(alertDialogState = this, onRating = ::rateStarsRedirectAndThankYou)
         }
     }
 
@@ -276,7 +276,7 @@ class TestDialogActivity : ComponentActivity() {
     @Composable
     private fun getPurchaseThankYouAlertDialogState() = rememberAlertDialogState().apply {
         DialogMember {
-            PurchaseThankYouAlertDialog(alertDialogState = this)
+            //PurchaseThankYouAlertDialog(alertDialogState = this)
         }
     }
 

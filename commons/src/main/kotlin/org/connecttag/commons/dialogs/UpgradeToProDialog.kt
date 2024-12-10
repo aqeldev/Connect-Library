@@ -28,7 +28,7 @@ import org.connecttag.commons.extensions.launchUpgradeToProIntent
 import org.connecttag.commons.extensions.launchViewIntent
 import org.connecttag.commons.extensions.setupDialogStuff
 
-class UpgradeToProDialog(val activity: Activity) {
+class UpgradeToProDialog2(val activity: Activity) {
 
     init {
         val view = DialogUpgradeToProBinding.inflate(activity.layoutInflater, null, false).apply {

@@ -32,7 +32,7 @@ import org.connecttag.commons.compose.theme.SimpleTheme
 import org.connecttag.commons.databinding.DialogFeatureLockedBinding
 import org.connecttag.commons.extensions.*
 
-class FeatureLockedDialog(val activity: Activity, val callback: () -> Unit) {
+class FeatureLockedDialog2(val activity: Activity, val callback: () -> Unit) {
     private var dialog: AlertDialog? = null
 
     init {

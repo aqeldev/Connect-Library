@@ -38,7 +38,7 @@ import org.connecttag.commons.compose.theme.SimpleTheme
 import org.connecttag.commons.databinding.DialogRateStarsBinding
 import org.connecttag.commons.extensions.*
 
-class RateStarsDialog(val activity: Activity) {
+class RateStarsDialog2(val activity: Activity) {
     private var dialog: AlertDialog? = null
 
     init {
@@ -78,7 +78,7 @@ class RateStarsDialog(val activity: Activity) {
 }
 
 @Composable
-fun RateStarsAlertDialog(
+fun RateStarsAlertDialog2(
     alertDialogState: AlertDialogState,
     modifier: Modifier = Modifier,
     onRating: (stars: Int) -> Unit
@@ -165,6 +165,6 @@ private fun StarRating(
 @MyDevices
 private fun RateStarsAlertDialogPreview() {
     AppThemeSurface {
-        RateStarsAlertDialog(alertDialogState = rememberAlertDialogState(), onRating = {})
+        RateStarsAlertDialog2(alertDialogState = rememberAlertDialogState(), onRating = {})
     }
 }

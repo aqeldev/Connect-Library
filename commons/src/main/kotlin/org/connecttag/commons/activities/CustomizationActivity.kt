@@ -374,7 +374,7 @@ class CustomizationActivity : BaseSimpleActivity() {
         baseConfig.isGlobalThemeEnabled = binding.applyToAll.isChecked
         baseConfig.isSystemThemeEnabled = curSelectedThemeId == THEME_SYSTEM
 
-        if (isThankYouInstalled()) {
+        if (isThankYouInstalled2()) {
             val globalThemeType = when {
                 baseConfig.isGlobalThemeEnabled.not() -> GLOBAL_THEME_DISABLED
                 baseConfig.isSystemThemeEnabled -> GLOBAL_THEME_SYSTEM
@@ -579,7 +579,7 @@ class CustomizationActivity : BaseSimpleActivity() {
                 saveChanges(false)
             }
 
-            isThankYouInstalled() -> {
+            isThankYouInstalled2() -> {
                 binding.applyToAll.isChecked = true
                 ConfirmationDialog(this, "", R.string.global_theme_success, R.string.ok, 0) {
                     updateColorTheme(getCurrentThemeId())
@@ -589,7 +589,7 @@ class CustomizationActivity : BaseSimpleActivity() {
 
             else -> {
                 binding.applyToAll.isChecked = false
-                PurchaseThankYouDialog(this)
+                //PurchaseThankYouDialog(this)
             }
         }
     }

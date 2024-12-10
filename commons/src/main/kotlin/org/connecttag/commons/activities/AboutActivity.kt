@@ -20,7 +20,7 @@ import org.connecttag.commons.compose.extensions.rateStarsRedirectAndThankYou
 import org.connecttag.commons.compose.screens.*
 import org.connecttag.commons.compose.theme.AppThemeSurface
 import org.connecttag.commons.dialogs.ConfirmationAdvancedAlertDialog
-import org.connecttag.commons.dialogs.RateStarsAlertDialog
+
 import org.connecttag.commons.extensions.*
 import org.connecttag.commons.helpers.*
 import org.connecttag.commons.models.FAQItem
@@ -132,10 +132,10 @@ class AboutActivity : BaseComposeActivity() {
     private fun getRateStarsAlertDialogState() =
         rememberAlertDialogState().apply {
             DialogMember {
-                RateStarsAlertDialog(
-                    alertDialogState = this,
-                    onRating = ::rateStarsRedirectAndThankYou
-                )
+                //RateStarsAlertDialog(
+               //     alertDialogState = this,
+               //     onRating = ::rateStarsRedirectAndThankYou
+               // )
             }
         }
 

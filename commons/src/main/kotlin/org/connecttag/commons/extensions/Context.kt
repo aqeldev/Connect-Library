@@ -489,29 +489,29 @@ fun Context.getUriMimeType(path: String, newUri: Uri): String {
     return mimeType
 }
 
-fun Context.isThankYouInstalled() = isPackageInstalled("org.fossify.thankyou")
+fun Context.isThankYouInstalled2() = isPackageInstalled("org.connecttag.thankyou")
 
 fun Context.canAccessGlobalConfig(): Boolean {
-    return isThankYouInstalled() && ContextCompat.checkSelfPermission(this, PERMISSION_WRITE_GLOBAL_SETTINGS) == PERMISSION_GRANTED
+    return isThankYouInstalled2() && ContextCompat.checkSelfPermission(this, PERMISSION_WRITE_GLOBAL_SETTINGS) == PERMISSION_GRANTED
 }
 
-fun Context.isOrWasThankYouInstalled(): Boolean {
+fun Context.isOrWasThankYouInstalled2(): Boolean {
     return when {
         resources.getBoolean(R.bool.pretend_thank_you_installed) -> true
         baseConfig.hadThankYouInstalled -> true
-        isThankYouInstalled() -> {
+        isThankYouInstalled2() -> {
             baseConfig.hadThankYouInstalled = true
             true
         }
 
-        else -> false
+        else -> true
     }
 }
 
-fun Context.isAProApp() = packageName.startsWith("org.fossify.") && packageName.removeSuffix(".debug").endsWith(".pro")
+fun Context.isAProApp() = packageName.startsWith("org.connecttag.") && packageName.removeSuffix(".debug").endsWith(".pro")
 
-fun Context.getCustomizeColorsString(): String {
-    val textId = if (isOrWasThankYouInstalled()) {
+fun Context.getCustomizeColorsString2(): String {
+    val textId = if (isOrWasThankYouInstalled2()) {
         R.string.customize_colors
     } else {
         R.string.customize_colors_locked
@@ -520,8 +520,8 @@ fun Context.getCustomizeColorsString(): String {
     return getString(textId)
 }
 
-fun Context.addLockedLabelIfNeeded(stringId: Int): String {
-    return if (isOrWasThankYouInstalled()) {
+fun Context.addLockedLabelIfNeeded2(stringId: Int): String {
+    return if (isOrWasThankYouInstalled2()) {
         getString(stringId)
     } else {
         "${getString(stringId)} (${getString(R.string.feature_locked)})"
@@ -710,7 +710,7 @@ fun Context.saveExifRotation(exif: ExifInterface, degrees: Int) {
 
 fun Context.getLaunchIntent() = packageManager.getLaunchIntentForPackage(baseConfig.appId)
 
-fun Context.getCanAppBeUpgraded() = proPackages.contains(baseConfig.appId.removeSuffix(".debug").removePrefix("org.fossify."))
+fun Context.getCanAppBeUpgraded() = proPackages.contains(baseConfig.appId.removeSuffix(".debug").removePrefix("org.connecttag."))
 
 fun Context.getProUrl() = "https://play.google.com/store/apps/details?id=${baseConfig.appId.removeSuffix(".debug")}.pro"
 
@@ -1005,9 +1005,9 @@ fun Context.getCornerRadius() = resources.getDimension(R.dimen.rounded_corner_ra
 
 // we need the Default Dialer functionality only in Simple Dialer and in Simple Contacts for now
 fun Context.isDefaultDialer(): Boolean {
-    return if (!packageName.startsWith("org.fossify.contacts") && !packageName.startsWith("org.fossify.phone")) {
+    return if (!packageName.startsWith("org.connecttag.contacts") && !packageName.startsWith("org.connecttag.phone")) {
         true
-    } else if ((packageName.startsWith("org.fossify.contacts") || packageName.startsWith("org.fossify.phone")) && isQPlus()) {
+    } else if ((packageName.startsWith("org.connecttag.contacts") || packageName.startsWith("org.connecttag.phone")) && isQPlus()) {
         val roleManager = getSystemService(RoleManager::class.java)
         roleManager!!.isRoleAvailable(RoleManager.ROLE_DIALER) && roleManager.isRoleHeld(RoleManager.ROLE_DIALER)
     } else {
