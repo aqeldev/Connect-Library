@@ -309,7 +309,7 @@ fun Activity.launchUpgradeToProIntent() {
 }
 
 fun Activity.launchMoreAppsFromUsIntent() {
-    launchViewIntent(DEVELOPER_PLAY_STORE_URL)
+  //  launchViewIntent(DEVELOPER_PLAY_STORE_URL)
 }
 
 fun Activity.launchViewIntent(id: Int) = launchViewIntent(getString(id))

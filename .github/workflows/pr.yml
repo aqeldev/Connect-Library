@@ -6,6 +6,6 @@ on:
 
 jobs:
     call-pr-workflow:
-        uses: FossifyOrg/.github/.github/workflows/pr.yml@main
+        uses: ConnectTag/.github/.github/workflows/pr.yml@main
         with:
             test_task: ":commons:testDebugUnitTest"

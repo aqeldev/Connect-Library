@@ -47,7 +47,7 @@
         errorLine1="class SplashActivity : BaseSplashActivity() {"
         errorLine2="      ~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/commons/samples/activities/SplashActivity.kt"
+            file="src/main/kotlin/org/ConnectTag/commons/samples/activities/SplashActivity.kt"
             line="6"
             column="7"/>
     </issue>

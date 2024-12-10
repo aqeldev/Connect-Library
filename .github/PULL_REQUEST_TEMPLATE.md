@@ -1,4 +1,4 @@
-<!-- Hey there. Thank you so much for improving Fossify. Please consider filling out the details :)-->
+<!-- Hey there. Thank you so much for improving ConnectTag. Please consider filling out the details :)-->
 
 #### What is it?
 - [ ] Bugfix
@@ -17,12 +17,12 @@
 - After:
 
 #### Fixes the following issue(s)
-<!-- Prefix issues with "Fixes FossifyOrg/AppRepo" so that GitHub closes them when this PR is merged (note that each "Fixes #" should be in its own item). For Commons, it should always be in a format like "Fixes FossifyOrg/AppRepo#123" -->
-- Fixes FossifyOrg/
+<!-- Prefix issues with "Fixes ConnectTag/AppRepo" so that GitHub closes them when this PR is merged (note that each "Fixes #" should be in its own item). For Commons, it should always be in a format like "Fixes ConnectTag/AppRepo#123" -->
+- Fixes ConnectTag/
 
 #### Relies on the following changes
 <!-- Delete this if it doesn't apply to your PR. -->
 - 
 
 #### Acknowledgement
-- [ ] I read the [contribution guidelines](https://github.com/FossifyOrg/Commons/blob/master/CONTRIBUTING.md).
+- [ ] I read the [contribution guidelines](https://github.com/ConnectTag/Commons/blob/master/CONTRIBUTING.md).

@@ -343,7 +343,7 @@
     <string name="global_theme_success">Uspješno ažurirane boje. Nova tema pod nazivom \'Shared\' je dodana, molimo koristite ju za ažuriranje svih boja u aplikaciji u budućnosti.</string>
     <string name="purchase_thank_you">
         <![CDATA[
-            Molimo kupite <a href="https://play.google.com/store/apps/details?id=org.fossify.thankyou">Fossify Thank You</a> za otključavanje ove funkcije i podršku razvoju. Hvala!
+            Molimo kupite <a href="https://play.google.com/store/apps/details?id=org.ConnectTag.thankyou">ConnectTag Thank You</a> za otključavanje ove funkcije i podršku razvoju. Hvala!
         ]]>
     </string>
     <string name="light_theme">Svijetla</string>

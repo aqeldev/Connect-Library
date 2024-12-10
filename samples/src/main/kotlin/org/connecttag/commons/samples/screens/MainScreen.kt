@@ -112,13 +112,13 @@ private fun buildActionMenuItems(
         doAction = openAbout,
         overflowMode = OverflowMode.NEVER_OVERFLOW
     )
-    if (showMoreApps) {
+/*    if (showMoreApps) {
         list += ActionItem(
             R.string.more_apps_from_us,
             doAction = moreAppsFromUs,
             overflowMode = OverflowMode.ALWAYS_OVERFLOW
         )
-    }
+    }*/
     return list.toImmutableList()
 }
 

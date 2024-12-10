@@ -28,7 +28,7 @@
         android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
         tools:node="remove" />
 
-    <uses-permission android:name="org.fossify.android.permission.WRITE_GLOBAL_SETTINGS" />
+    <uses-permission android:name="org.connecttag.android.permission.WRITE_GLOBAL_SETTINGS" />
 
     <application android:supportsRtl="true">
         <activity
@@ -69,11 +69,11 @@
             android:exported="false" />
 
         <receiver
-            android:name=".receivers.FossifyBroadcastReceiver"
+            android:name=".receivers.MainBroadcastReceiver"
             android:exported="true"
             tools:ignore="ExportedReceiver">
             <intent-filter>
-                <action android:name="org.fossify.android.GLOBAL_CONFIG_UPDATED" />
+                <action android:name="org.connecttag.android.GLOBAL_CONFIG_UPDATED" />
             </intent-filter>
         </receiver>
     </application>

@@ -102,15 +102,15 @@ internal fun OtherSection(
             modifier = titleStartPadding
         )
     }) {
-        if (showMoreApps) {
+  /*      if (showMoreApps) {
             TwoLinerTextItem(
                 click = onMoreAppsClick,
                 text = stringResource(id = R.string.more_apps_from_us),
                 icon = R.drawable.ic_apps_vector
             )
-        }
+        }*/
 
-        TwoLinerTextItem(
+    /*    TwoLinerTextItem(
             click = onPrivacyPolicyClick,
             text = stringResource(id = R.string.privacy_policy),
             icon = R.drawable.ic_policy_outline_vector
@@ -119,7 +119,7 @@ internal fun OtherSection(
             click = onLicenseClick,
             text = stringResource(id = R.string.third_party_licences),
             icon = R.drawable.ic_article_outline_vector
-        )
+        )*/
         SettingsListItem(
             tint = SimpleTheme.colorScheme.onSurface,
             click = onVersionClick,
