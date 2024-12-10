@@ -124,7 +124,7 @@ internal fun OtherSection(
             tint = SimpleTheme.colorScheme.onSurface,
             click = onVersionClick,
             text = versionName,
-            description = packageName,
+            description = "فريق النظم والتحليل",
             icon = R.drawable.ic_info_outline_vector,
             maxLines = 2,
             overflow = TextOverflow.Ellipsis
