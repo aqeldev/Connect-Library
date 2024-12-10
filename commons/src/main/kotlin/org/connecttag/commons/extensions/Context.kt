@@ -1151,7 +1151,7 @@ fun Context.isNumberBlockedByPattern(number: String, blockedNumbers: ArrayList<B
 }
 
 fun Context.copyToClipboard(text: String) {
-    val clip = ClipData.newPlainText(getString(R.string.fossify_commons), text)
+    val clip = ClipData.newPlainText(getString(R.string.app_commons), text)
     (getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager).setPrimaryClip(clip)
     val toastText = String.format(getString(R.string.value_copied_to_clipboard_show), text)
     toast(toastText)
