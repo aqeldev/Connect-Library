@@ -11,7 +11,7 @@ plugins {
 }
 
 group = "org.connecttag"
-version = "1.0.6"
+version = "1.0.8"
 
 android {
     namespace = "org.connecttag.commons"

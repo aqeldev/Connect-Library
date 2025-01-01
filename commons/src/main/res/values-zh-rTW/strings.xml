@@ -211,7 +211,7 @@
     <string name="global_theme_success">色彩更新成功。新增了一個名為 \'Shared\' 的新主題，以後請使用那個來更新全部應用程式顏色。</string>
     <string name="purchase_thank_you">
         <![CDATA[
-            請購買 <a href="https://play.google.com/store/apps/details?id=org.fossify.thankyou">Fossify Thank You</a> 來解鎖此功能及支持開發者。謝謝!
+            請購買 <a href="https://play.google.com/store/apps/details?id=org.connecttag.thankyou">connecttag Thank You</a> 來解鎖此功能及支持開發者。謝謝!
         ]]>
     </string>
     <string name="light_theme">淺色主題</string>
@@ -583,7 +583,7 @@
     <string name="donate_please">
         <![CDATA[
             哈囉 <br><br>
-            希望您喜愛這應用程式。 它不含廣告，所以請購買應用程式 <a href="https://play.google.com/store/apps/details?id=org.fossify.thankyou">Fossify Thank You</a> 來支持開發者，這對話框也不會再出現。<br><br>
+            希望您喜愛這應用程式。 它不含廣告，所以請購買應用程式 <a href="https://play.google.com/store/apps/details?id=org.connecttag.thankyou">connecttag Thank You</a> 來支持開發者，這對話框也不會再出現。<br><br>
             感謝!
         ]]>
     </string>
@@ -641,7 +641,7 @@
     <string name="faq_8_title_commons">為什麼我應該升級到專業版?</string>
     <string name="faq_8_text_commons">由於你的程式版本不再更新，將永遠不會修復可能遇到的錯誤，也不會再添加新功能。你可以在Google Play上用一小筆錢購買專業版。
         這是一次性付款。也就是說，一旦你購買了將不必再次付費，即使之後有新裝置也不用。如果你不喜歡專業版，則可以在幾個小時內解除安裝，將自動拿回你的錢。
-        之後如果何時想退款，只要你以 hello@fossify.org 聯絡我們然後就能獲得退款了。</string>
+        之後如果何時想退款，只要你以 hello@connecttag.org 聯絡我們然後就能獲得退款了。</string>
     <string name="notice">這程式使用了下列的第三方函式庫來讓我工作簡化。感謝。</string>
     <string name="third_party_licences">第三方授權</string>
     <string name="kotlin_title">Kotlin（程式語言）</string>
@@ -670,8 +670,8 @@
     <string name="indicator_fast_scroll_title">Indicator Fast Scroll（滾動條上字母）</string>
     <string name="event_bus_title">Event Bus（應用程式溝通）</string>
     <string name="audio_record_view_title">Audio Record View (音訊視覺化)</string>
-    <string name="deprecated_app">已捨棄: 這版本的應用程式不再維護，在這取得專業版  https://play.google.com/store/apps/details?id=org.fossify..xxx.pro</string>
-    <string name="pro_app_refund">別忘記如果您在2小時內解除安裝任何付費應用程式，將會自動被退款。若您在之後隨時想退款，只要透過 @fossify.org 聯絡我們，即可收到退款。這麼一來輕鬆就能試用了 :)</string>
+    <string name="deprecated_app">已捨棄: 這版本的應用程式不再維護，在這取得專業版  https://play.google.com/store/apps/details?id=org.connecttag..xxx.pro</string>
+    <string name="pro_app_refund">別忘記如果您在2小時內解除安裝任何付費應用程式，將會自動被退款。若您在之後隨時想退款，只要透過 @connecttag.org 聯絡我們，即可收到退款。這麼一來輕鬆就能試用了 :)</string>
     <string name="dial_number">撥打電話號碼</string>
     <string name="notifications">通知</string>
     <string name="no_access_to_contacts">此應用程式無法存取您的聯絡人</string>
@@ -771,5 +771,5 @@
     <string name="unblock_contact">解除封鎖聯絡人</string>
     <string name="format_phone_numbers">設定電話號碼格式</string>
     <string name="theme_and_colors">主題與色彩</string>
-    <string name="all_fossify_apps">所有 Fossify 應用程式</string>
+    <string name="all_our_apps">所有 connecttag 應用程式</string>
 </resources>

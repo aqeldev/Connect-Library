@@ -19,8 +19,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import org.connecttag.commons.R
-import org.connecttag.commons.activities.FossifyCryptoAddresses
-import org.connecttag.commons.activities.FossifyDonationPlatforms
+import org.connecttag.commons.activities.connecttagCryptoAddresses
+import org.connecttag.commons.activities.connecttagDonationPlatforms
 import org.connecttag.commons.compose.lists.SimpleColumnScaffold
 import org.connecttag.commons.compose.settings.SettingsGroup
 import org.connecttag.commons.compose.settings.SettingsHorizontalDivider
@@ -40,7 +40,7 @@ fun DonationScreen(
     openWebsite: (String) -> Unit,
     copyToClipboard: (String) -> Unit,
 ) {
-    SimpleColumnScaffold(title = stringResource(id = R.string.donate_to_fossify), goBack = goBack) {
+    SimpleColumnScaffold(title = stringResource(id = R.string.donate_to_connecttag), goBack = goBack) {
         DonationPlatforms(
             options = donationOptions,
             copyToClipboard = copyToClipboard,
@@ -157,8 +157,8 @@ fun DonationListItem(
 @Preview
 fun PreviewDonationScreen() {
     DonationScreen(
-        donationOptions = FossifyDonationPlatforms,
-        cryptoAddresses = FossifyCryptoAddresses,
+        donationOptions = connecttagDonationPlatforms,
+        cryptoAddresses = connecttagCryptoAddresses,
         goBack = {},
         openWebsite = {},
         copyToClipboard = {},

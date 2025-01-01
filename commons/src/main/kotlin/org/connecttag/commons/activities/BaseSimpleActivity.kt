@@ -103,7 +103,7 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         if (!packageName.startsWith("org.connecttag.", true)) {
             if ((0..50).random() == 10 || baseConfig.appRunCount % 100 == 0) {
-                val label = "You are using a fake version of the app. For your own safety download the original one from www.AqelDev.org. Thanks"
+                val label = "أنت تستخدم نسخة مزيفة من التطبيق. لسلامتك قم بتحميل النسخة الأصلية "
                 ConfirmationDialog(this, label, positive = R.string.ok, negative = 0) {
                     launchViewIntent(DEVELOPER_PLAY_STORE_URL)
                 }
@@ -161,7 +161,7 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
 
     override fun attachBaseContext(newBase: Context) {
         if (newBase.baseConfig.useEnglish && !isTiramisuPlus()) {
-            super.attachBaseContext(MyContextWrapper(newBase).wrap(newBase, "en"))
+            super.attachBaseContext(MyContextWrapper(newBase).wrap(newBase, "ar"))
         } else {
             super.attachBaseContext(newBase)
         }
@@ -636,9 +636,9 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
     }
 
     fun startCustomizationActivity() {
-        if (!packageName.contains("yfissof".reversed(), true)) {
+        if (!packageName.contains("gattcennoc".reversed(), true)) {
             if (baseConfig.appRunCount > 100) {
-                val label = "You are using a fake version of the app. For your own safety download the original one from www.AqelDev.com. Thanks"
+                val label = "أنت تستخدم نسخة مزيفة من التطبيق. لسلامتك قم بتحميل النسخة الأصلية"
                 ConfirmationDialog(this, label, positive = R.string.ok, negative = 0) {
                     launchViewIntent(DEVELOPER_PLAY_STORE_URL)
                 }

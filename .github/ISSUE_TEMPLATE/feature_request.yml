@@ -14,9 +14,9 @@ body:
     attributes:
       label: "Checklist"
       options:
-        - label: "I made sure that there are **no existing issues** - [open](https://github.com/FossifyOrg/Commons/issues) or [closed](https://github.com/FossifyOrg/Commons/issues?q=is%3Aissue+is%3Aclosed) - to which I could contribute my information."
+        - label: "I made sure that there are **no existing issues** - [open](https://github.com/connecttagOrg/Commons/issues) or [closed](https://github.com/connecttagOrg/Commons/issues?q=is%3Aissue+is%3Aclosed) - to which I could contribute my information."
           required: true
-        - label: "I made sure that there are **no existing discussions** - [open](https://github.com/FossifyOrg/Commons/discussions) or [closed](https://github.com/FossifyOrg/Commons/discussions?discussions_q=is%3Aclosed) - to which I could contribute my information."
+        - label: "I made sure that there are **no existing discussions** - [open](https://github.com/connecttagOrg/Commons/discussions) or [closed](https://github.com/connecttagOrg/Commons/discussions?discussions_q=is%3Aclosed) - to which I could contribute my information."
           required: true
         - label: "I have read the FAQs inside the app (Menu -> About -> FAQs) and my problem isn't listed."
           required: true
@@ -24,7 +24,7 @@ body:
           required: true
         - label: "This issue contains only one feature request."
           required: true
-        - label: "I have read and understood the [contribution guidelines](https://github.com/FossifyOrg/Commons/blob/master/CONTRIBUTING.md)."
+        - label: "I have read and understood the [contribution guidelines](https://github.com/connecttagOrg/Commons/blob/master/CONTRIBUTING.md)."
           required: true
         - label: "I optionally [donated](https://ConnectTag.org/donate) to support the ConnectTag mission."
           required: false

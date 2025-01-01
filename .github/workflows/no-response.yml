@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/stale@v9
         with:
-          repo-token: ${{ secrets.FOSSIFYBOT_TOKEN }}
+          repo-token: ${{ secrets.connecttagBOT_TOKEN }}
           days-before-stale: -1
           # Number of days of inactivity before an issue is closed for lack of response.
           days-before-close: 14

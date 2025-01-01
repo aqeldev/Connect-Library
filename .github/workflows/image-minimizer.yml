@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.FOSSIFYBOT_TOKEN }}
+          token: ${{ secrets.connecttagBOT_TOKEN }}
 
       - uses: actions/setup-node@v4
         with:
@@ -28,7 +28,7 @@ jobs:
         uses: actions/github-script@v7
         timeout-minutes: 3
         with:
-          github-token: ${{ secrets.FOSSIFYBOT_TOKEN }}
+          github-token: ${{ secrets.connecttagBOT_TOKEN }}
           script: |
             const script = require('.github/workflows/image-minimizer.js');
             await script({github, context});

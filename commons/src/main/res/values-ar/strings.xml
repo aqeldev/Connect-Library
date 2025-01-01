@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="other">اخرى</string>
     <string name="ok">موافق</string>
     <string name="cancel">إلغاء</string>
     <string name="close">اغلاق</string>

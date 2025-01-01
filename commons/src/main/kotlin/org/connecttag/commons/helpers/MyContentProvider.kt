@@ -9,7 +9,7 @@ object MyContentProvider {
     const val ACTION_GLOBAL_CONFIG_UPDATED = "org.connecttag.android.GLOBAL_CONFIG_UPDATED"
     const val PERMISSION_WRITE_GLOBAL_SETTINGS = "org.connecttag.android.permission.WRITE_GLOBAL_SETTINGS"
 
-    const val COL_ID = "_id"    // used in Fossify Thank You
+    const val COL_ID = "_id"    // used in connecttag Thank You
     const val COL_THEME_TYPE = "theme_type"
     const val COL_TEXT_COLOR = "text_color"
     const val COL_BACKGROUND_COLOR = "background_color"

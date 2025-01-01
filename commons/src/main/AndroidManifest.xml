@@ -62,7 +62,7 @@
         <activity
             android:name=".activities.DonationActivity"
             android:exported="false"
-            android:label="@string/donate_to_fossify" />
+            android:label="@string/donate_to_connecttag" />
 
         <activity
             android:name=".activities.AppLockActivity"
